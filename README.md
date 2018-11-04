@@ -14,8 +14,11 @@ Slack Messages Archive System for bypass limit 10.000 recent messages only of fr
 2. Elasticsearch
 3. Redis
 4. Set PHP.ini memory_limit = 512M or memory_limit = 1G
+5. Must have a little knowledge of Laravel
 
 # Installation Guide 
+
+0. Setup server environment to run Laravel Application, **composer install** to install dependencies ... 
 
 1. Create a Admin User for Workspace, this user is dedicated for App. Suggest name for user is SlackArchiveBot . This user is use only for app dont use it for chatting.
 
