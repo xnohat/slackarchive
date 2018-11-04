@@ -1,0 +1,121 @@
+Create a Admin User for Workspace, this user is dedicated for App. Suggest name for user is SlackArchiveBot . This user is use only for app dont use it for chatting.
+
+Login with this user
+
+Go to https://api.slack.com/apps
+
+Create an Slack App with 
+
+App Name:
+SlackArchiveBot
+
+Development Workspace:
+Your slack workspace
+
+Go to your app -> install app or URL below
+https://api.slack.com/apps/<APP_ID>/install-on-team
+Doing install app to your Workspace
+Copy "OAuth Access Token"
+
+set this token to "token" in file config/services.php (clone file from services.example.php)
+
+'slack' => [
+        'token' => 'xoxp-110218693525-110132216082-xxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxx',
+    ],
+
+Go to file config/slackarchive.php (clone from file slackarchive.example.php)
+
+edit line 
+
+'secret_key' => '7e79d196fe0797xxxxxxxxxxx',
+
+with any random string secret_key (format a-z,0-9) . Copy this secret_key and use as below.
+
+
+    'team_name' => 'Team Name', // is your Workspace name
+
+    'full_domain' => 'slack.yourdomain.com', // your domain for Slack Archive
+
+
+Go to your app -> Slash Commands or URL
+https://api.slack.com/apps/<APP_ID>/slash-commands
+Create new command
+
+----
+Command: /find
+Request URL: http://slack.yourdomain.com/slack?cmd=find&secret=<secret_key>
+Short Description: Search old messages in this channel
+Usage Hint: <query> limit:<number>
+Escape channels, users, and links sent to your app: Checked
+
+Click Save
+----
+
+----
+Command: /history
+Request URL: http://slack.yourdomain.com/viewhistory?secret=<secret_key>
+Short Description: View history of this channel
+Usage Hint:
+Escape channels, users, and links sent to your app: Checked
+
+Click Save
+----
+
+Done for Slack App
+
+
+--------------------------------------------------------
+
+Go to server shell
+
+$ nano /etc/crontab
+
+add line 
+
+* * * * * root php /var/www/html/artisan schedule:run >> /dev/null 2>&1
+
+$ crontab /etc/crontab
+
+Go to /var/www/html
+
+php artisan clear-all-cache
+
+
+Some php artisan command you need
+
+test Slack Archive Bot crawler. Run this for first time
+
+$ php artisan bot:crawl
+
+add all messages to ElasticSearch. Run this for first time to create ES index
+
+$ php artisan es:addallmessagetoindex
+
+reindex all message. Run this every time cannot search any thing on slack archive
+
+$ php artisan es:reindexallmessages
+
+--------------------------------------------------------
+
+Usage:
+
+in slack channel you need to view history type
+
+/history
+
+Click a link returned by bot to view history
+
+/find <query> limit:<number>
+
+to find message
+
+REMEMBER:
+
+Invite user @SlackArchiveBot to every PRIVATE channel your need to save history
+
+Direct Message cannot save history
+
+TIPS:
+
+Add all Admins or any popular users of your Workspace to Collaborators in SlackArchiveBot App Setting. Because bot can crawl all channels they have joined. BUT FOR SECURITY REASON they also access to SLACK API and use OAuth access token to access all messages. SO ONLY ADD COLLABORATORS WHO YOU TRUST !
+

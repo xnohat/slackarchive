@@ -1,0 +1,62 @@
+Joined user to channel
+
+Slack\Payload Object
+(
+    [data:protected] => Array
+        (
+            [user] => U38FD7UP3
+            [inviter] => U383W6C2E
+            [user_profile] => Array
+                (
+                    [avatar_hash] => 63aa5cc99dfb
+                    [image_72] => https://avatars.slack-edge.com/2016-12-01/111886129543_63aa5cc99dfb8d318f15_72.jpg
+                    [first_name] => Chuong
+                    [real_name] => Chuong Mai
+                    [display_name] => chuongmt
+                    [team] => T386ELDFF
+                    [name] => chuongmt
+                    [is_restricted] =>
+                    [is_ultra_restricted] =>
+                )
+
+            [type] => message
+            [subtype] => channel_join
+            [team] => T386ELDFF
+            [text] => <@U38FD7UP3> has joined the channel
+            [channel] => C7558T26A
+            [event_ts] => 1506287723.000086
+            [ts] => 1506287723.000086
+        )
+
+)
+
+User leave channel
+
+Slack\Payload Object
+(
+    [data:protected] => Array
+        (
+            [user] => U38FD7UP3
+            [user_profile] => Array
+                (
+                    [avatar_hash] => 63aa5cc99dfb
+                    [image_72] => https://avatars.slack-edge.com/2016-12-01/111886129543_63aa5cc99dfb8d318f15_72.jpg
+                    [first_name] => Chuong
+                    [real_name] => Chuong Mai
+                    [display_name] => chuongmt
+                    [team] => T386ELDFF
+                    [name] => chuongmt
+                    [is_restricted] =>
+                    [is_ultra_restricted] =>
+                )
+
+            [type] => message
+            [subtype] => channel_leave
+            [team] => T386ELDFF
+            [text] => <@U38FD7UP3> has left the channel
+            [channel] => C7558T26A
+            [event_ts] => 1506287902.000056
+            [ts] => 1506287902.000056
+        )
+
+)

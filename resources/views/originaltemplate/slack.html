@@ -1,0 +1,1632 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SlackArchive.io</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link href="static/css/app.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="app" class="ready">
+        <div class="splash" style="display: none;"><img src="static/img/logo.b781b16.png" alt="SlackArchive.io" class="img-fluid">
+            <div class="loader loader-sm"></div>
+        </div>
+        <!---->
+        <div class="header">
+            <div class="container-fluid">
+                <div class="mobile-header">
+                    <a href="javascript:togglenavbar()" class="navbar-toggle">
+                        <div class="icon-bar"></div>
+                        <div class="icon-bar"></div>
+                        <div class="icon-bar"></div>
+                    </a>
+                    <div id="team" class="team-name">Kubernetes</div>
+                </div>
+                <ul class="header-nav">
+                    <li><a href="http://kubernetes.slack.com/" target="_blank">Open Slack</a></li>
+                    <li class="hidden-sm"><a href="http://slack.kubernetes.io/" target="_blank">Join Kubernetes</a></li>
+                </ul>
+                <div class="promo"><a href="http://slackarchive.io" target="_blank" class="promo-text"><strong>SIGN UP</strong>
+        for a slack archive
+      </a> <a href="http://slackarchive.io" target="_blank"><img src="static/img/logo.b781b16.png" alt="SlackArchive.io" class="logo logo-md"> <img src="static/img/slackarchive.png" alt="SlackArchive.io" class="logo logo-xs"></a></div>
+            </div>
+        </div>
+        <div ng-cloak="" class="sidebar"><a href="/" class="team-name router-link-active">Kubernetes</a>
+            <div class="content">
+                <form id="searchForm" class="search-form">
+                    <div class="input-group"><input type="text" size="30" placeholder="Search..." class="search-input"> <span class="icon icon-search"></span> <a href=""><span class="icon icon-remove" style="display: none;"></span></a></div>
+                </form>
+                <h2 id="sepH2"><span class="filters"><a href="" class="active">Active</a> <a href="" class="">All</a></span> <span>Channels</span> <span style="display: none;">Filter by channel</span></h2>
+                <div id="shadowContainer" class="shadow-container">
+                    <ul id="channelsList" class="channels-list" style="height: 432px;">
+                        <li><a href="/community-sites" class="" id="channel-menu-community-sites">
+            # community-sites
+            </a></li>
+                        <li><a href="/de-events" class="" id="channel-menu-de-events">
+            # de-events
+            </a></li>
+                        <li><a href="/de-users" class="" id="channel-menu-de-users">
+            # de-users
+            </a></li>
+                        <li><a href="/elastickube" class="" id="channel-menu-elastickube">
+            # elastickube
+            </a></li>
+                        <li><a href="/events" class="" id="channel-menu-events">
+            # events
+            </a></li>
+                        <li><a href="/fr-events" class="" id="channel-menu-fr-events">
+            # fr-events
+            </a></li>
+                        <li><a href="/fr-users" class="" id="channel-menu-fr-users">
+            # fr-users
+            </a></li>
+                        <li><a href="/github" class="router-link-active" id="channel-menu-github">
+            # github
+            </a></li>
+                        <li><a href="/google-containers" class="" id="channel-menu-google-containers">
+            # google-containers
+            </a></li>
+                        <li><a href="/helm-users" class="" id="channel-menu-helm-users">
+            # helm-users
+            </a></li>
+                        <li><a href="/jenkins-ci" class="" id="channel-menu-jenkins-ci">
+            # jenkins-ci
+            </a></li>
+                        <li><a href="/kompose" class="" id="channel-menu-kompose">
+            # kompose
+            </a></li>
+                        <li><a href="/kops" class="" id="channel-menu-kops">
+            # kops
+            </a></li>
+                        <li><a href="/kubeadm" class="" id="channel-menu-kubeadm">
+            # kubeadm
+            </a></li>
+                        <li><a href="/kubernetes-careers" class="" id="channel-menu-kubernetes-careers">
+            # kubernetes-careers
+            </a></li>
+                        <li><a href="/kubernetes-dev" class="" id="channel-menu-kubernetes-dev">
+            # kubernetes-dev
+            </a></li>
+                        <li><a href="/kubernetes-novice" class="" id="channel-menu-kubernetes-novice">
+            # kubernetes-novice
+            </a></li>
+                        <li><a href="/kubernetes-pm" class="" id="channel-menu-kubernetes-pm">
+            # kubernetes-pm
+            </a></li>
+                        <li><a href="/kubernetes-users" class="" id="channel-menu-kubernetes-users">
+            # kubernetes-users
+            </a></li>
+                        <li><a href="/kubespray" class="" id="channel-menu-kubespray">
+            # kubespray
+            </a></li>
+                        <li><a href="/minikube" class="" id="channel-menu-minikube">
+            # minikube
+            </a></li>
+                        <li><a href="/multi-platform" class="" id="channel-menu-multi-platform">
+            # multi-platform
+            </a></li>
+                        <li><a href="/openstack-helm" class="" id="channel-menu-openstack-helm">
+            # openstack-helm
+            </a></li>
+                        <li><a href="/openstack-kolla" class="" id="channel-menu-openstack-kolla">
+            # openstack-kolla
+            </a></li>
+                        <li><a href="/ops-status" class="" id="channel-menu-ops-status">
+            # ops-status
+            </a></li>
+                        <li><a href="/shippable" class="" id="channel-menu-shippable">
+            # shippable
+            </a></li>
+                        <li><a href="/sig-api-machinery" class="" id="channel-menu-sig-api-machinery">
+            # sig-api-machinery
+            </a></li>
+                        <li><a href="/sig-apps" class="" id="channel-menu-sig-apps">
+            # sig-apps
+            </a></li>
+                        <li><a href="/sig-auth" class="" id="channel-menu-sig-auth">
+            # sig-auth
+            </a></li>
+                        <li><a href="/sig-autoscaling" class="" id="channel-menu-sig-autoscaling">
+            # sig-autoscaling
+            </a></li>
+                        <li><a href="/sig-aws" class="" id="channel-menu-sig-aws">
+            # sig-aws
+            </a></li>
+                        <li><a href="/sig-azure" class="" id="channel-menu-sig-azure">
+            # sig-azure
+            </a></li>
+                        <li><a href="/sig-big-data" class="" id="channel-menu-sig-big-data">
+            # sig-big-data
+            </a></li>
+                        <li><a href="/sig-cli" class="" id="channel-menu-sig-cli">
+            # sig-cli
+            </a></li>
+                        <li><a href="/sig-cluster-lifecycle" class="" id="channel-menu-sig-cluster-lifecycle">
+            # sig-cluster-lifecycle
+            </a></li>
+                        <li><a href="/sig-cluster-ops" class="" id="channel-menu-sig-cluster-ops">
+            # sig-cluster-ops
+            </a></li>
+                        <li><a href="/sig-contribex" class="" id="channel-menu-sig-contribex">
+            # sig-contribex
+            </a></li>
+                        <li><a href="/sig-docs" class="" id="channel-menu-sig-docs">
+            # sig-docs
+            </a></li>
+                        <li><a href="/sig-federation" class="" id="channel-menu-sig-federation">
+            # sig-federation
+            </a></li>
+                        <li><a href="/sig-gcp" class="" id="channel-menu-sig-gcp">
+            # sig-gcp
+            </a></li>
+                        <li><a href="/sig-instrumentation" class="" id="channel-menu-sig-instrumentation">
+            # sig-instrumentation
+            </a></li>
+                        <li><a href="/sig-network" class="" id="channel-menu-sig-network">
+            # sig-network
+            </a></li>
+                        <li><a href="/sig-node" class="" id="channel-menu-sig-node">
+            # sig-node
+            </a></li>
+                        <li><a href="/sig-node-rkt" class="" id="channel-menu-sig-node-rkt">
+            # sig-node-rkt
+            </a></li>
+                        <li><a href="/sig-onprem" class="" id="channel-menu-sig-onprem">
+            # sig-onprem
+            </a></li>
+                        <li><a href="/sig-release" class="" id="channel-menu-sig-release">
+            # sig-release
+            </a></li>
+                        <li><a href="/sig-scale" class="" id="channel-menu-sig-scale">
+            # sig-scale
+            </a></li>
+                        <li><a href="/sig-scheduling" class="" id="channel-menu-sig-scheduling">
+            # sig-scheduling
+            </a></li>
+                        <li><a href="/sig-storage" class="" id="channel-menu-sig-storage">
+            # sig-storage
+            </a></li>
+                        <li><a href="/sig-testing" class="" id="channel-menu-sig-testing">
+            # sig-testing
+            </a></li>
+                        <li><a href="/sig-ui" class="" id="channel-menu-sig-ui">
+            # sig-ui
+            </a></li>
+                        <li><a href="/sig-windows" class="" id="channel-menu-sig-windows">
+            # sig-windows
+            </a></li>
+                        <li><a href="/travis-ci" class="" id="channel-menu-travis-ci">
+            # travis-ci
+            </a></li>
+                        <li><a href="/wg-resource-mgmt" class="" id="channel-menu-wg-resource-mgmt">
+            # wg-resource-mgmt
+            </a></li>
+                    </ul>
+                    <div id="topShadow" class="sofa-scrolling-shadow-top" style="top: -10px;"></div>
+                    <div id="bottomShadow" class="sofa-scrolling-shadow-bottom" style="bottom: 0px;"></div>
+                </div>
+            </div>
+        </div>
+        <div id="main_container" class="main-content">
+            <div>
+                <div class="loader messages-loader-top loader-xs" style="display: none;"></div>
+                <ul id="messages" class="messages">
+                    <!---->
+                    <li id="1460962745000143" class="msg-type-bot_message">
+                        <div class="msg-date-separator"><span>April 18, 2016</span></div>
+                        <div class="msg-avatar"><span><img src="https://i1.wp.com/slack.global.ssl.fastly.net/66f9/img/avatars/ava_0010-48.png" class="msg-thumb"></span></div>
+                        <div class="msg-container">
+                            <div class="msg-header"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 13:59</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/23889" target="_bank">#23889 Whether or not to use systemd on host to babysit rkt process</a> by <a href="https://github.com/yifan-gu" target="_bank">yifan-gu</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460963306000144" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 14:08</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/24018" target="_bank">#24018 Load netfilter module in kubenet for bridge plugins</a> by <a href="https://github.com/k8s-merge-robot" target="_bank">k8s-merge-robot</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460963306000145" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 14:08</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/24107" target="_bank">#24107 kubenet: Load bridge netfilter module in Init().</a> by <a href="https://github.com/k8s-merge-robot" target="_bank">k8s-merge-robot</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460963308000146" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 14:08</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #4183C4"><code><a href="https://github.com/kubernetes/kubernetes/commit/02c0f41c8811b9f63c54a39a6317f7197fba87a7" target="_bank">02c0f41</a></code> kubenet: Load bridge netfilter module in Init(). - Yifan Gu
+                                    <code><a href="https://github.com/kubernetes/kubernetes/commit/d0b52dd8b3ad3c53721327cbbd73d668ea7ced97" target="_bank">d0b52dd</a></code> Merge pull request #24107 from yifan-gu/load_bridge - k8s-merge-robot</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460964014000147" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 14:20</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/24188" target="_bank">#24188 help-need: some requests are really slow</a> by <a href="https://github.com/mqliang" target="_bank">mqliang</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460964235000148" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 14:23</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/24244" target="_bank">#24244 Automated cherry pick of #23435</a> by <a href="https://github.com/thockin" target="_bank">thockin</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460964400000149" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 14:26</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/24367" target="_bank">#24367 rkt: Return <code>FinishedAt</code> for pod</a> by <a href="https://github.com/euank" target="_bank">euank</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460965159000150" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 14:39</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/13299" target="_bank">#13299 sessionAffinity lost with GCE LoadBalancer when RC is recreated after service</a> by <a href="https://github.com/thockin" target="_bank">thockin</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460965345000151" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 14:42</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/24156" target="_bank">#24156 Move generic packages from <code>pkg/util</code> into a separate repo</a> by <a href="https://github.com/thockin" target="_bank">thockin</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460965417000152" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 14:43</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/24112" target="_bank">#24112 Strip comments from configure-vm.sh for gce</a> by <a href="https://github.com/k8s-merge-robot" target="_bank">k8s-merge-robot</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460965417000153" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 14:43</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #4183C4"><code><a href="https://github.com/kubernetes/kubernetes/commit/5a785698aa81074beeac5bfcffa924e52a762212" target="_bank">5a78569</a></code> Strip comments from configure-vm.sh for gce - CJ Cullen
+                                    <code><a href="https://github.com/kubernetes/kubernetes/commit/26c99fee0095eb15b4a843b657f43ec7323a04f7" target="_bank">26c99fe</a></code> Merge pull request #24112 from cjcullen/rmcomments - k8s-merge-robot</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460966019000154" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 14:53</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/23553" target="_bank">#23553 Update Service with no change in Spec causes GCE to add/delete addresses and forwarding rules</a> by <a href="https://github.com/thockin" target="_bank">thockin</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460966224000155" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 14:57</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/23326" target="_bank">#23326 Consume configMap resourceVersion in ENV or File</a> by <a href="https://github.com/thockin" target="_bank">thockin</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460969467000156" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 15:51</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">I've been trying to make the cluster deployment scripts work properly for existing VPC's, and I've created a patch that will solve the following issues: • kube-up can't use existing security groups • kube-up can't create master without public IP (This prevents the cluster from working on private subnets with a corporate VPN tunnel) I was going to propose to merge these changes, but the more I think of it the more I'm uncertain whether the current kube-up is the right approach for this. The current deployment scripts are great for setting up new temporary clusters in its own VPC, but has several more issues when it comes to integrating with existing production environments: • Deployment will in some cases fail when trying to create resources that already exist • In cases where it is able to use existing resources, it will not check if these resources are actually usable (configured correctly, access rights, etc) • If deployment fails, you're left with an awful mess to clean up manually. • kube-down will either not work, or create a disaster for other services (haven't dared testing) • The deployment scripts seems to provide few or no customization options for things like integrating nodes with a private docker registry. On the other hand, setting up a cluster manually seems to make it nearly impossible or at the very least very hard to utilize the AWS cloud-provider, which is required to make the Kubernetes LoadBalancer integrate with ELB. Is there a plan for how to go forward with this?</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460972864000157" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 16:47</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">This is a fix for #20223. I tried different solutions and current one is the best from my perspective. *Root cause* The defect is caused by the different on xargs on GNU and BSD, in GNU it works fine while on BSD, the -I option has a strict limit that the length of parameter can not be longer than 255. *Solution* Option 1: move the bash -c call to different places, this is the current solution. Several changes are included in the patch, and it's pretty tricky. 1) move the bash -c call to a function named run_go_test and moved the function to hack/lib/golang.sh. The reason is test-go.sh can not be sourced, and golang.sh is the best place I can find. In addition, this change only applies to osx, as the xargs behavior on mac and linux are different. 2) The function call needs parameters, we can not use function parameters to pass them, as it will exceed the limit of 255, which will break xargs, so I export all required parameters instead. 3) I read the code and found the go_test_grep_pattern should be regular expression, but it was not working on both linux and osx, as -p or -e flag is missing. Like you will always get the whole error content on linux no matter if KUBE_JUNIT_REPORT_DIR is set or not. 4) we can not use .* as default grep pattern on osx, otherwise it will list all content of the current directory. Option 2: I also tried to re-write the function by avoiding using xargs, but as we need to leverage the multi-core functions, so we have to write our own processes pool to utilize the CPU resources, and it is not a easy job to manage forked process, monitoring the status and return code. So this option was dropped. As this is critical logic for testing, so please help to review very carefully to avoid any regression. Thanks in advance.</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460973381000158" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 16:56</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644"><a href="https://github.com/kubernetes/kubernetes/issues/22371" target="_bank">https://github.com/kubernetes/kubernetes/issues/22371</a> still stands for Windows clients since path.Base is not platform-agnostic[1]. Use filepath.Base instead[2]. [1] <a href="https://golang.org/src/path/path.go?s=4482:4511#L166" target="_bank">https://golang.org/src/path/path.go?s=4482:4511#L166</a> [2] <a href="https://golang.org/src/path/filepath/path.go?s=12257:12286#L409" target="_bank">https://golang.org/src/path/filepath/path.go?s=12257:12286#L409</a> cc: @kubernetes/kubectl </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460974328000159" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 17:12</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">[kubernetes/contrib] Pull request submitted: '#795 Added placeholder for Cluster Autoscaler' https://github.com/kubernetes/contrib/pull/795 by piosz</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460974545000160" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 17:15</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/contrib] Pull request closed: <a href="https://github.com/kubernetes/contrib/pull/795" target="_bank">#795 Added placeholder for Cluster Autoscaler</a> by <a href="https://github.com/mwielgus" target="_bank">mwielgus</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460974545000161" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 17:15</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #4183C4"><code><a href="https://github.com/kubernetes/contrib/commit/ec7961d6f7f5db5164358f31f30d0afcb3945612" target="_bank">ec7961d</a></code> Added placeholder for Cluster Autoscaler - Piotr Szczesniak
+                                    <code><a href="https://github.com/kubernetes/contrib/commit/2927c3d776375d07b3e4f501e81319269bc4e594" target="_bank">2927c3d</a></code> Merge pull request #795 from piosz/placeholder - Marcin Wielgus</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460982331000162" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 19:25</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">Current hacky version has number of drawbacks: • works only on GCE • doesn't support of cases and we may still have pending pods • very cloud provider specific • very hard to update configuration • UX is very poor We'd like to improve it to: • support all cases for pending pods • provide a reference implementation that could be ported to other cloud providers. It should support both scaling up (P1) and scaling down (P2). This an umbrella bug used for referencing PRs etc.</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460983389000163" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 19:43</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">ref: #22448 *Description* • We want to have a flag in apiserver to switch to different storage backends. The default should remain as "etcd2", and user can choose a different storage backend e.g. etcd3 by setting the flag. • What should the flag look like? • We need to pass configs specific to etcd3. On top of my head, I think we just need server list (incl. overrides), key prefix. We can reuse <a href="https://github.com/kubernetes/kubernetes/blob/a275a045d12b01f8349561190acb8793ec7489bc/cmd/kube-apiserver/app/options/options.go#L204-L205" target="_bank">existing flags</a> "etcd-servers", "etcd-servers-overrides", and prefix. One difference to note is that we will use "ip:port" instead of "<a href="http://ip:port" target="_bank">http://ip:port</a>". *About Config Entry* How could we provide an abstraction to switch between storages? Currently, user passes config into apiserver via <a href="https://github.com/kubernetes/kubernetes/blob/2bf52175f914a600c5472f8cebff56bed6c9e178/pkg/storage/etcd/etcd_helper.go#L67-L76" target="_bank">EtcdConfig</a> and set those fields. I'm thinking about to reuse this struct as the entry point -- either add a new field "version" or have different sub-struct like "v2" and "v3". Of course, this is just a shortcut I'm pointing out. I want to collect everyone's thoughts and ideas about how to structure the configuration here better.</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460984212000164" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 19:56</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">[kubernetes/kubernetes] Pull request submitted: '#24406 Removed unused provider specific code in gce provider' https://github.com/kubernetes/kubernetes/pull/24406 by piosz</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460986777000165" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 20:39</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/13775" target="_bank">#13775 Make generic: Conversion &amp; Deep copy generators</a> by <a href="https://github.com/wojtek-t" target="_bank">wojtek-t</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460988345000166" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 21:05</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/24101" target="_bank">#24101 Pod in RunContainerError Status</a> by <a href="https://github.com/k8s-merge-robot" target="_bank">k8s-merge-robot</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460988345000167" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 21:05</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/24126" target="_bank">#24126 Fix PullImage and add corresponding node e2e test</a> by <a href="https://github.com/k8s-merge-robot" target="_bank">k8s-merge-robot</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460988346000168" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 21:05</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #4183C4"><code><a href="https://github.com/kubernetes/kubernetes/commit/2b9f6bea1829c64a4b64d2673f70ec866200f6fe" target="_bank">2b9f6be</a></code> Fix PullImage and corresponding node e2e test. - Random-Liu
+                                    <code><a href="https://github.com/kubernetes/kubernetes/commit/d37e6ad332694ae44d9f66dbe6e7c9ef3850244b" target="_bank">d37e6ad</a></code> Merge pull request #24126 from Random-Liu/fix-pull-image - k8s-merge-robot</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460989376000169" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 21:22</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">The metrics schema page is very confusing: <a href="https://github.com/kubernetes/heapster/blob/master/docs/storage-schema.md" target="_bank">https://github.com/kubernetes/heapster/blob/master/docs/storage-schema.md</a> It list a bunch of metrics that Heapster collections, but it does not break down these metrics to what is provided at the container level, at the pod level, at the namespace level, at the cluster level, etc People look at this page to see what metrics are being provided and believe these metrics are all provided at an individual container level, which is not the case.</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460990910000170" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 21:48</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/23575" target="_bank">#23575 shared controller informers</a> by <a href="https://github.com/k8s-merge-robot" target="_bank">k8s-merge-robot</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460990911000171" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 21:48</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #4183C4"><code><a href="https://github.com/kubernetes/kubernetes/commit/96d1f48b0ba3797a514d5bdaab2d690a8add09ba" target="_bank">96d1f48</a></code> add SharedInformer - deads2k
+                                    <code><a href="https://github.com/kubernetes/kubernetes/commit/f0c33d65b6fea84d791059d96c93a15e4b3de4ec" target="_bank">f0c33d6</a></code> start sharing the pod cache and list/watch - deads2k
+                                    <code><a href="https://github.com/kubernetes/kubernetes/commit/5ad27f2720d6f8efb90902c39a188b4f827cbef8" target="_bank">5ad27f2</a></code> Merge pull request #23575 from deads2k/shared-cache - k8s-merge-robot</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460992994000172" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 22:23</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/23694" target="_bank">#23694 etcd3/store: watcher implementation</a> by <a href="https://github.com/k8s-merge-robot" target="_bank">k8s-merge-robot</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460992995000173" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 22:23</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #4183C4"><code><a href="https://github.com/kubernetes/kubernetes/commit/e18b4e67be37357f46f518ead6813fa575322827" target="_bank">e18b4e6</a></code> etcd3/store: watcher implementation - Hongchao Deng
+                                    <code><a href="https://github.com/kubernetes/kubernetes/commit/616af686cbb50dc42434d7a9864e2cf465cb9ab9" target="_bank">616af68</a></code> Merge pull request #23694 from hongchaodeng/w - k8s-merge-robot</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460993737000174" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 22:35</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">ref #24404</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460994514000175" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 22:48</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">configured with kupe-up.sh #~/kubernetes//cluster/vsphere/config-default.sh ... *Optional: Install Kubernetes UI* ENABLE_CLUSTER_UI="${KUBE_ENABLE_CLUSTER_UI:-true}" ... $ kubectl get po --namespace=kube-system NAME READY STATUS RESTARTS AGE kube-dns-v11-9wm87 3/4 CrashLoopBackOff 1507 3d kube-proxy-10.0.0.112 1/1 Running 0 3d kube-proxy-10.0.0.113 1/1 Running 0 3d kube-proxy-10.0.0.114 1/1 Running 0 3d kube-proxy-10.0.0.115 1/1 Running 0 3d If I try configuring it manually $ kubectl create -f cluster/addons/dashboard/dashboard-controller.yaml --namespace=kube-system replicationcontroller "kubernetes-dashboard-v1.0.1" created $ kubectl create -f cluster/addons/dashboard/dashboard-service.yaml --namespace=kube-system service "kubernetes-dashboard" created kubectl cluster-info Kubernetes master is running at <a href="https://10.0.0.111" target="_bank">https://10.0.0.111</a> KubeDNS is running at <a href="https://10.0.0.111/api/v1/proxy/namespaces/kube-system/services/kube-dns" target="_bank">https://10.0.0.111/api/v1/proxy/namespaces/kube-system/services/kube-dns</a> kubernetes-dashboard is running at <a href="https://10.0.0.111/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard" target="_bank">https://10.0.0.111/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard</a> curl -L -k -u admin:somepassword <a href="https://10.0.0.111/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard" target="_bank">https://10.0.0.111/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard</a> Error: 'dial tcp 172.17.0.2:9090: getsockopt: no route to host' $ kubectl get events --namespace=kube-system 3d &lt;invalid&gt; 1514 kube-dns-v11-9wm87 Pod spec.containers{kube2sky} Unhealthy {kubelet 10.0.0.115} Liveness probe failed: HTTP probe failed with statuscode: 503 3d &lt;invalid&gt; 1501 kube-dns-v11-9wm87 Pod spec.containers{kube2sky} Killing {kubelet 10.0.0.115} (events with common reason combined) &lt;invalid&gt; &lt;invalid&gt; 1 kubernetes-dashboard-v1.0.1 ReplicationController SuccessfulDelete {replication-controller } Deleted pod: kubernetes-dashboard-v1.0.1-2fsix &lt;invalid&gt; &lt;invalid&gt; 1 kubernetes-dashboard-v1.0.1-2fsix Pod spec.containers{kubernetes-dashboard} Killing {kubelet 10.0.0.114} Killing container with docker id 3e67166d0c48: Need to kill pod. I've been trying a few time with all the latest release I've been unable to access the dashboard.</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460995817000176" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 23:10</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">I'm running some experiments on scheduler code. In particular what I'm running is: • I'm starting 1000-node Kubemark cluster • Killing scheduler job • starting density test and wait until enough pods are created (and waiting for scheduling) • I'm restarting scheduler (with increased qps limit) I added some logs to understand what is expensive in scheduler and should be optimized - see:
+                                    <a href="https://github.com/kubernetes/kubernetes/compare/master...wojtek-t:test?expand=1" target="_bank">https://github.com/kubernetes/kubernetes/compare/master...wojtek-t:test?expand=1</a> What I'm seeing are some period where scheduler seem to be doing nothing. For example see logs:
+                                    <pre>E0418 15:46:51.086081    4064 generic_scheduler.go:86] AAA -&gt; compute predicates
+E0418 15:46:51.092237    4064 generic_scheduler.go:100] AAA -&gt; prioritize
+E0418 15:46:51.097980    4064 generic_scheduler.go:237]   -&gt; 4
+E0418 15:46:51.098422    4064 node_affinity.go:96]   -&gt; node affinity
+E0418 15:46:51.100128    4064 priorities.go:92]   -&gt; least requested
+E0418 15:46:51.100347    4064 priorities.go:229]   -&gt; balanced resource
+E0418 15:46:51.104830    4064 selector_spreading.go:236]   -&gt; spreading
+E0418 15:46:51.105064    4064 generic_scheduler.go:269] AAA -&gt; finished prioritization</pre> ^^ there are 5ms between "prioritize" and "4", and from the code it seems that there isn't anything happening then:
+                                    <a href="https://github.com/kubernetes/kubernetes/blob/master/plugin/pkg/scheduler/generic_scheduler.go#L98" target="_bank">https://github.com/kubernetes/kubernetes/blob/master/plugin/pkg/scheduler/generic_scheduler.go#L98</a> This seems to be a very common patter in logs:
+                                    <pre>E0418 15:46:51.229580    4064 generic_scheduler.go:86] AAA -&gt; compute predicates
+E0418 15:46:51.235562    4064 generic_scheduler.go:100] AAA -&gt; prioritize
+E0418 15:46:51.242312    4064 generic_scheduler.go:237]   -&gt; 4
+E0418 15:46:51.242748    4064 node_affinity.go:96]   -&gt; node affinity
+E0418 15:46:51.244354    4064 priorities.go:92]   -&gt; least requested
+E0418 15:46:51.244551    4064 priorities.go:229]   -&gt; balanced resource
+E0418 15:46:51.249022    4064 selector_spreading.go:236]   -&gt; spreading</pre> Another similar "pause period" happens frequently after all priority function are already finished:
+                                    <pre>E0418 15:46:48.522108    4064 generic_scheduler.go:237]   -&gt; 4
+E0418 15:46:48.522667    4064 node_affinity.go:96]   -&gt; node affinity
+E0418 15:46:48.524575    4064 priorities.go:92]   -&gt; least requested
+E0418 15:46:48.524576    4064 priorities.go:229]   -&gt; balanced resource
+E0418 15:46:48.531036    4064 selector_spreading.go:236]   -&gt; spreading
+E0418 15:46:48.538735    4064 generic_scheduler.go:269] AAA -&gt; finished prioritization</pre> ^^ all priority functions finished and still it took 7ms to "finish prioritization"
+                                    <a href="https://github.com/kubernetes/kubernetes/blob/master/plugin/pkg/scheduler/generic_scheduler.go#L262" target="_bank">https://github.com/kubernetes/kubernetes/blob/master/plugin/pkg/scheduler/generic_scheduler.go#L262</a> [Theoretically this 7ms includes time to update combinedScore slice, but in many cases it takes &lt;0.5ms, so it's most probably not that.] For completeness - we are using Go 1.6., so IIUC this shouldn't be garbage collector. @davidopp @gmarek @hongchaodeng @kubernetes/sig-scalability </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460996779000177" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 23:26</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/23807" target="_bank">#23807 Added namespace to Spark example.</a> by <a href="https://github.com/k82" target="_bank">k82</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460997366000178" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 23:36</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">[kubernetes/kubernetes] Pull request re-opened: <a href="https://github.com/kubernetes/kubernetes/pull/23807" target="_bank">#23807 Added namespace to Spark example.</a> by <a href="https://github.com/k82" target="_bank">k82</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460998677000179" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 23:57</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/24019" target="_bank">#24019 Service IP is not reachable because the bridge netfilter module is not loaded</a> by <a href="https://github.com/yifan-gu" target="_bank">yifan-gu</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460998784000180" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 18, 2016 23:59</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">I got SSH working properly on the slaves, so that shouldn't blow things up like last time. I also set Kubemark to run using the legacy runner on the master only, since that was broken. This will need a manual merge, @k8s-oncall. I think it won't break the world this time, but there's always a chance.</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460999411000182" class="msg-type-bot_message">
+                        <div class="msg-date-separator"><span>April 19, 2016</span></div>
+                        <div class="msg-avatar"><span><img src="https://i1.wp.com/slack.global.ssl.fastly.net/66f9/img/avatars/ava_0010-48.png" class="msg-thumb"></span></div>
+                        <div class="msg-container">
+                            <div class="msg-header"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:10</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">Part of #24155 We are migrating controllers to use the versioned clients, one blocker is that the pkg/client/record only handles api.Event. Hence, we add a pkg/client/record/v1 to handle the v1.Events. The old <code>record</code> package will be removed when all the controllers have migrated to use the versioned clients.</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460999482000183" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:11</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/contrib] Issue closed: <a href="https://github.com/kubernetes/contrib/issues/782" target="_bank">#782 Getting 301 error during tests</a> by <a href="https://github.com/runseb" target="_bank">runseb</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1460999780000184" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:16</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/23342" target="_bank">#23342 e2e flake: All nodes should be ready after test, Not ready nodes</a> by <a href="https://github.com/dchen1107" target="_bank">dchen1107</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461000294000185" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:24</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/21475" target="_bank">#21475 e2e flake: Detected 3 ready nodes, found 3 nodes out of expected 6</a> by <a href="https://github.com/dchen1107" target="_bank">dchen1107</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461000298000186" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:24</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">Someone reported:
+                                    <pre>I then use kubectl get services and I don’t have an external IP address. 
+NAME         CLUSTER-IP       EXTERNAL-IP   PORT(S)   AGE
+frontend     10.163.255.126                 80/TCP    24s
+kubernetes   10.163.240.1     &lt;none&gt;        443/TCP   27m
+
+I panic a little cause I thought I requested it. I look up a few things and in a lark rerun and kubectl get services get:
+NAME         CLUSTER-IP       EXTERNAL-IP     PORT(S)   AGE
+frontend     10.163.255.126   146.148.62.90   80/TCP    4m
+kubernetes   10.163.240.1     &lt;none&gt;          443/TCP   32m
+
+Okay. It might be nice if it had told me that it was requesting, instead of just being blank.
+</pre> The empty output is caused by:
+                                    <pre>func getServiceExternalIP(svc *api.Service) string {
+    switch svc.Spec.Type {
+    case api.ServiceTypeClusterIP:
+        if len(svc.Spec.ExternalIPs) &gt; 0 {
+            return strings.Join(svc.Spec.ExternalIPs, ",")
+        }
+        return "&lt;none&gt;"
+    case api.ServiceTypeNodePort:
+        if len(svc.Spec.ExternalIPs) &gt; 0 {
+            return strings.Join(svc.Spec.ExternalIPs, ",")
+        }
+        return "nodes"
+    case api.ServiceTypeLoadBalancer:
+        lbIps := loadBalancerStatusStringer(svc.Status.LoadBalancer)
+        if len(svc.Spec.ExternalIPs) &gt; 0 {
+            result := append(strings.Split(lbIps, ","), svc.Spec.ExternalIPs...)
+            return strings.Join(result, ",")
+        }
+        return lbIps
+    }
+    return "unknown"
+}
+</pre> Note the last case doesn't check for an empty list. We should settle on a term for values that are currently empty but we expect to be populated asynchronously. I don't like "requesting". Elsewhere we use "pending", such as for unscheduled pods, so let's go with that. And, let's ensure that all the non-literal values are bracketed consistently: <code>&lt;pending&gt;</code>, <code>&lt;nodes&gt;</code>, <code>&lt;unknown&gt;</code>. We should update the kubectl conventions accordingly. Similar recent PRs: #22279, #22635 cc @AdoHe </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461000549000187" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:29</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/24365" target="_bank">#24365 -t shorthand for --tty instead of --template</a> by <a href="https://github.com/janetkuo" target="_bank">janetkuo</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461000551000188" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:29</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">[kubernetes/kubernetes] Pull request re-opened: <a href="https://github.com/kubernetes/kubernetes/pull/24365" target="_bank">#24365 -t shorthand for --tty instead of --template</a> by <a href="https://github.com/janetkuo" target="_bank">janetkuo</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461000685000189" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:31</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/24125" target="_bank">#24125 rate_limited_queue_test TestTryOrdering can fail under CPU load</a> by <a href="https://github.com/gmarek" target="_bank">gmarek</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461000835000190" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:33</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">[kubernetes/kubernetes] Issue re-opened: <a href="https://github.com/kubernetes/kubernetes/issues/24125" target="_bank">#24125 rate_limited_queue_test TestTryOrdering can fail under CPU load</a> by <a href="https://github.com/smarterclayton" target="_bank">smarterclayton</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461000894000191" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:34</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">tests in <code>test/integration/...</code> do not emit a <code>junit.xml</code>, so we can't see details of their failures in Jenkins. Either run a post-processor like <a href="https://github.com/jstemmer/go-junit-report" target="_bank">https://github.com/jstemmer/go-junit-report</a>, or convert tests to use Ginkgo/Gomega, which will emit junit.xml. The former seems easier.</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461000965000192" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:36</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/20658" target="_bank">#20658 Reopening Image details for getPod API</a> by <a href="https://github.com/vishh" target="_bank">vishh</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461001376000193" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:42</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/23329" target="_bank">#23329 e2e flake: Nodes [Disruptive] [k8s.io] Network when a node becomes unreachable [replication controller] recreates pods scheduled on the unreachable node AND allows scheduling of pods on a node after it rejoins the cluster</a> by <a href="https://github.com/dchen1107" target="_bank">dchen1107</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461001894000194" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:51</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">[kubernetes/kubernetes] Pull request submitted: '#24413 fix godeps' https://github.com/kubernetes/kubernetes/pull/24413 by mikedanese</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461002236000195" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:57</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">Leaking: • instance groups • target pools • forwarding rules • firewall rules • health checks</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461002243000196" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 00:57</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">Even when some test fails contents are:
+                                    <pre>&lt;testsuite tests="0" failures="0" time="15.245789696"&gt;
+...
+</pre> cc @kubernetes/sig-testing @wojtek-t </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461003232000197" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 01:13</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">Start generating fake client in the testoutput, so that we can check the fake client is generated correctly under extreme conditions. Fix the problem reported <a href="https://github.com/kubernetes/kubernetes/pull/20573#issuecomment-210556618" target="_bank">https://github.com/kubernetes/kubernetes/pull/20573#issuecomment-210556618</a>, where the import names contain dots when the group name contains dots. cc @deads2k </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461003903000198" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 01:25</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">Docker runs a userland proxy (<code>docker-proxy</code>) process for pods using host ports. E.g., one of the the add-on pods (<code>monitoring-influxdb-grafana</code>) uses host ports.
+                                    <pre>root      1015  0.0  0.4 241128 37016 ?        Sl   Apr15   0:25 docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8086 -container-ip 10.245.2.3 -container-port 8086
+root      1021  0.0  0.5 175848 38608 ?        Sl   Apr15   0:25 docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8083 -container-ip 10.245.2.3 -container-port 8083
+</pre> In the containerVM, kubelet moves the docker process to the docker-daemon cgroup. If the <code>docker-proxy</code> processes was created _before_ that, they wouldn't have been moved along with the docker daemon. This seems to be the case for most freshly created e2e clusters (I checked two clusters). If the <code>docker-proxy</code> processes are created _after_ docker has been moved, they're be part docker-daemon cgroup. These cause a several issues when tracking the resource usage in the e2e tests: • Only one node in the cluster _may_ have higher memory usage than others. • If the docker daemon is managed by systemd, it's likely that the <code>docker-proxy</code> processes are charged to the same docker.service cgroup. This is different from the default behavior we see in containerVM nodes. Options to mitigate this impact on the resource tracking tests: 1. Increase the memory threshold to account for the difference. 2. Move the resource usage tracking test to the node e2e suite, where there is no cluster addons pods. I think we can relax the memory threshold first (1), and then migrate this test later (2). Besides the test issues, we still have the problem of not being able to track the docker runtime usage consistently. Should we charge the docker-proxy process to the pod or should in be in docker generally? /cc @dchen1107 @vishh @kubernetes/sig-node </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461004576000199" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 01:36</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/24413" target="_bank">#24413 fix godeps</a> by <a href="https://github.com/mikedanese" target="_bank">mikedanese</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461004773000200" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 01:39</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">alanhartless [1:27 PM] &gt; Anyone by chance know if the fact that <code>/sys/fs/cgroup/cpuacct/docker</code> doesn’t exist in a google container node is a Google, Debian, kubernetes, or docker issue? New Relics docker monitor apparently doesn’t work because <code>/sys/fs/cgroup/cpuacct/docker</code> and <code>/sys/fs/cgroup/memory/docker</code> doesn’t exist. <a href="https://discuss.newrelic.com/t/docker-metrics-not-report-correctly-for-google-container-engine/36127/3?u=alan.hartless" target="_bank">https://discuss.newrelic.com/t/docker-metrics-not-report-correctly-for-google-container-engine/36127/3?u=alan.hartless</a> beeps [4:42 PM] &gt; @alanhartless: your stats should just be in /cpuacct not under /docker &gt; i.e /sys/fs/cgroup/cpu/$(docker inspect --format {{.Id}} &lt;container-id&gt;)/cpu.shares &gt; I'm guessing this is because we reparent cgroups. alanhartless [7:45 PM] &gt; @beeps thanks; apparently New Relic disagrees :simple_smile: I hope they fix it. alanhartless [9:19 AM] &gt; @beeps On the subject of New Relic’s docker monitoring feature (<a href="http://newrelic.com/docker" target="_bank">http://newrelic.com/docker</a>), they replied with &gt; <code></code>`Google Container Engine's implementation of Docker isn't currently supported by the LSM. This is because of the difference in the path to the .stat files. I have heard of folks using custom cgroups in their docker run command to revert the GCE behavior to default, and get the LSM working, but I have yet to see it in action. This might be worth investigating. &gt; By chance know if that’s possible and if so, what implications are there for kubernetes? @kubernetes/sig-node to comment on "Google Container Engine's implementation of Docker", maybe there's an easy workaround?</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461004866000201" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 01:41</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/heapster] Issue closed: <a href="https://github.com/kubernetes/heapster/issues/665" target="_bank">#665 Decide and document the scope of heapster's responsibilities</a> by <a href="https://github.com/mwielgus" target="_bank">mwielgus</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461005120000202" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 01:45</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">Hi folks, I am running a 3 node v1.2.2 kubernetes cluster on latest stable coreos 899.15.0. I observe strange behavior regarding nat with hyperkube proxy v1.2.2. Some traffic within a pod gets natted, the rest sends the flannel / docker bridge ip as source.
+
+                                    <pre>20:44:56.981324 rule 47/(match) [uid 0, pid 30892] block in on em2: 10.2.0.3.42638 &gt; 172.217.16.35.9000: S [tcp sum ok] 4234558441:4234558441(0) win 29200 &lt;mss 1460,sackOK,timestamp 348421361 0,nop,wscale 7&gt; (DF) (ttl 63, id 18200, len 60)
+20:44:57.979416 rule 47/(match) [uid 0, pid 30892] block in on em2: 10.2.0.3.42638 &gt; 172.217.16.35.9000: S [tcp sum ok] 4234558441:4234558441(0) win 29200 &lt;mss 1460,sackOK,timestamp 348422364 0,nop,wscale 7&gt; (DF) (ttl 63, id 18201, len 60)
+20:44:59.973279 rule 47/(match) [uid 0, pid 30892] block in on em2: 10.2.0.3.42638 &gt; 172.217.16.35.9000: S [tcp sum ok] 4234558441:4234558441(0) win 29200 &lt;mss 1460,sackOK,timestamp 348424368 0,nop,wscale 7&gt; (DF) (ttl 63, id 18202, len 60)
+20:45:25.553368 rule 47/(match) [uid 0, pid 30892] block in on em2: 10.2.0.3.46264 &gt; 109.68.230.138.9000: S [tcp sum ok] 3194331366:3194331366(0) win 29200 &lt;mss 1460,sackOK,timestamp 348450077 0,nop,wscale 7&gt; (DF) (ttl 63, id 19963, len 60)
+20:45:26.550352 rule 47/(match) [uid 0, pid 30892] block in on em2: 10.2.0.3.46264 &gt; 109.68.230.138.9000: S [tcp sum ok] 3194331366:3194331366(0) win 29200 &lt;mss 1460,sackOK,timestamp 348451080 0,nop,wscale 7&gt; (DF) (ttl 63, id 19964, len 60)
+20:45:56.676862 rule 47/(match) [uid 0, pid 30892] block in on em2: 172.16.100.3.39666 &gt; 79.247.120.77.22067: R [tcp sum ok] 3897297593:3897297593(0) win 0 (DF) (ttl 63, id 13630, len 40)
+20:45:56.676882 rule 47/(match) [uid 0, pid 30892] block in on em2: 172.16.100.3.39666 &gt; 79.247.120.77.22067: R [tcp sum ok] 3897297593:3897297593(0) win 0 (DF) (ttl 63, id 13631, len 40)
+</pre> 10.2.0.3 is the coreos host 172.16.100.3 is the container Didn't change my service, rc, docker and iptables settings recently. any ideas? </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461005442000203" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 01:50</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">[kubernetes/kubernetes] Pull request re-opened: <a href="https://github.com/kubernetes/kubernetes/pull/24244" target="_bank">#24244 Automated cherry pick of #23435</a> by <a href="https://github.com/roberthbailey" target="_bank">roberthbailey</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461005543000204" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 01:52</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">[kubernetes/kubernetes] Pull request re-opened: <a href="https://github.com/kubernetes/kubernetes/pull/24000" target="_bank">#24000 [e2e] kubectl.go : Inline all the test contents for [Conformance]</a> by <a href="https://github.com/jayunit100" target="_bank">jayunit100</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461005687000205" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 01:54</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/24412" target="_bank">#24412 Junit.xml for integration test</a> by <a href="https://github.com/erictune" target="_bank">erictune</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461006081000206" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 02:01</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/24153" target="_bank">#24153 make optional generic etcd fields optional</a> by <a href="https://github.com/deads2k" target="_bank">deads2k</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461006548000207" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 02:09</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/23728" target="_bank">#23728 flexVolumes pass only one part of a secret to the plugin</a> by <a href="https://github.com/saad-ali" target="_bank">saad-ali</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461008131000208" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 02:35</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">At minimum, we need to improve the error message:
+                                    <code>The connection to the server localhost:8080 was refused - did you specify the right host or port?</code> We might also want to consider not using localhost as the default, though we want to keep it aligned with our single-node dev cluster plans. #24106 cc @kubernetes/kubectl @dlorenc @vishh </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461008155000209" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 02:35</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">An admission plugin can return <code>nil, nil</code> for construction. This is useful for dealing with cases where the <code>config</code> passed to you effectively means, "no work". The calling code already handles this. @derekwaynecarr </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461008799000210" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 02:46</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/24193" target="_bank">#24193 Bundle Gobindata as a fix to kubectl standalone [Conformance], and for the future.</a> by <a href="https://github.com/timothysc" target="_bank">timothysc</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461009143000211" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 02:52</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/23807" target="_bank">#23807 Added namespace to Spark example.</a> by <a href="https://github.com/k8s-merge-robot" target="_bank">k8s-merge-robot</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461009144000212" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 02:52</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #4183C4"><code><a href="https://github.com/kubernetes/kubernetes/commit/326e30772a62f077bdb4bf7e3413b92904705c90" target="_bank">326e307</a></code> Added namespace to Spark example. - Klaus Ma
+                                    <code><a href="https://github.com/kubernetes/kubernetes/commit/e5f237a7ff6fae9ee10174890f0229fe91c5c477" target="_bank">e5f237a</a></code> Merge pull request #23807 from k82/k8s-23537 - k8s-merge-robot</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461010167000213" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 03:09</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">Implements upstream change <a href="https://github.com/kubernetes/kubernetes/pull/23975" target="_bank">https://github.com/kubernetes/kubernetes/pull/23975</a>, which fixes <a href="https://github.com/kubernetes/kubernetes/issues/23973" target="_bank">https://github.com/kubernetes/kubernetes/issues/23973</a>.</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461010328000214" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 03:12</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/24409" target="_bank">#24409 Use Jenkins slaves</a> by <a href="https://github.com/spxtr" target="_bank">spxtr</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461010330000215" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 03:12</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #4183C4"><code><a href="https://github.com/kubernetes/kubernetes/commit/f815be2c72ea40b0d824a54fb35ca1a4e094390c" target="_bank">f815be2</a></code> Revert "Revert "Revert "Revert "Run most GCE, GKE, and Kubemark e2e jobs inside Docker"""" - Joe Finney
+                                    <code><a href="https://github.com/kubernetes/kubernetes/commit/f3b2490c90770bdeb21589eb9b6ba0b46282fe43" target="_bank">f3b2490</a></code> Kubemark tests need to run on the Jenkins master. - Joe Finney
+                                    <code><a href="https://github.com/kubernetes/kubernetes/commit/6e99624dd6d4dca664554120834d878d1cb34614" target="_bank">6e99624</a></code> Merge pull request #24409 from spxtr/do-it-right-this-time - Joe Finney</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461010727000216" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 03:18</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">The ssh command to run the ginkgo tests is failing with passing tests sometimes. &gt; Command [ssh -i /home/jenkins/.ssh/google_compute_engine -o UserKnownHostsFile=/dev/null -o IdentitiesOnly=yes -o CheckHostIP=no -o StrictHostKeyChecking=no tmp-node-e2e-1b6d7625-e2e-node-coreos-stable20160218-image -- sh -c 'cd /tmp/gcloud-e2e-1395811329 &amp;&amp; tar -xzvf ./e2e_node_test.tar.gz &amp;&amp; ./e2e_node.test --logtostderr --v 2 --build-services=false --node-name=tmp-node-e2e-1b6d7625-e2e-node-coreos-stable20160218-image'] failed with error: exit status 255 and output: ... SUCCESS! -- 23 Passed | 0 Failed | 0 Pending | 0 Skipped PASS
+
+                                    <a href="https://console.cloud.google.com/storage/browser/kubernetes-jenkins/logs/kubelet-gce-e2e-ci/1673" target="_bank">full logs</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461010856000217" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 03:20</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/23918" target="_bank">#23918 bump node e2e test time to 45 minutes</a> by <a href="https://github.com/pwittrock" target="_bank">pwittrock</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461011227000218" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 03:27</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">&gt; 17:20:21 • [SLOW TEST:11.682 seconds] 17:20:21 PrivilegedPod 17:20:21 /var/lib/jenkins/workspace/kubelet-gce-e2e-ci/go/src/k8s.io/kubernetes/test/e2e_node/privileged_test.go:84 17:20:21 should test privileged pod 17:20:21 /var/lib/jenkins/workspace/kubelet-gce-e2e-ci/go/src/k8s.io/kubernetes/test/e2e_node/privileged_test.go:83 17:20:21 ------------------------------ 17:20:21 I0418 00:19:33.350505 1028 privileged_test.go:154] Deserialized output is map[error:exit status 2 output:RTNETLINK answers: Operation not permitted 17:20:21 ] 17:20:21 ••••••Connection to tmp-node-e2e-ca7b49a2-e2e-node-coreos-stable20160218-image closed by remote host. 17:20:21 17:20:21 ================================================================
+
+                                    <a href="https://console.cloud.google.com/storage/browser/kubernetes-jenkins/logs/kubelet-gce-e2e-ci/1654" target="_bank">full logs</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461012244000219" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 03:44</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">kubelet ci test hit 45 minute timeout of after spendint 35 minutes building the go binaries &gt; 02:10:14 Started by timer ... 02:13:43 I0417 02:13:43.341929 17879 e2e_build.go:34] Building k8s binaries... 02:48:23 I0417 02:48:23.986454 17879 e2e_remote.go:57] Building ginkgo k8s test binaries... ... 02:55:58 Build timed out (after 45 minutes). Marking the build as failed.
+
+                                    <a href="https://console.cloud.google.com/storage/browser/kubernetes-jenkins/logs/kubelet-gce-e2e-ci/1632" target="_bank">full log</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461012425000220" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 03:47</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/contrib] Pull request closed: <a href="https://github.com/kubernetes/contrib/pull/565" target="_bank">#565 Refactor Perfdash to let it support more e2e performance test</a> by <a href="https://github.com/Random-Liu" target="_bank">Random-Liu</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461012425000221" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 03:47</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #4183C4"><code><a href="https://github.com/kubernetes/contrib/commit/05569c491930d7f95a32f0b10ee55947f3e92f7c" target="_bank">05569c4</a></code> Refactor perfdash to let it support more e2e test. - Lantao Liu
+                                    <code><a href="https://github.com/kubernetes/contrib/commit/28d92d05df793b4fe4e4cd3e9277929bf730f096" target="_bank">28d92d0</a></code> Update Godeps - Lantao Liu
+                                    <code><a href="https://github.com/kubernetes/contrib/commit/3a0c07eb707579f7ce14a114f54dd40ca1b55159" target="_bank">3a0c07e</a></code> Merge pull request #565 from Random-Liu/perfdash-support-more-e2e - Lantao Liu</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461012793000222" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 03:53</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">@vishh said support was dropped when it was refactored/improved</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461013102000223" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 03:58</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">This should fix tag-pinned GKE tests that are currently broken because #24058 doesn't exist for v1.2.2.</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461013257000224" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 04:00</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">• Add keep-alive to ssh connection • Don't try to stop services on image-based runs • Increase jenkins ci timeout to 90 minutes to accomadate unpredictable go build times • Remove spammy log statement</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461014539000225" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 04:22</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">Problem Various logging frameworks and the ELK stack need to be rapidly validated for survivability over time. Solution Create an E2E that soaks the container-space with logs at a well defined rate, so users can verify that logging holds up to TB, PB, etc. scale. cc @kubernetes/sig-scalability @kubernetes/sig-testing (@timothysc)</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461015195000226" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 04:33</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">This is a manual cherrypick of another part of #22962 (different from #24150). This properly propagates <code>E2E_REPORT_PREFIX</code>, since the files changed here are versioned differently from <code>e2e-runner.go</code>. cc @roberthbailey @zmerlynn as owners of v1.2 branch?</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461016257000227" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 04:50</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">Allows service IPs to be accessed from outside of the cluster. This requires that the service range be routed to a node (or several nodes) in the cluster. Addresses #24224. @thockin @ArtfulCoder </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461016916000228" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 05:01</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Pull request closed: <a href="https://github.com/kubernetes/kubernetes/pull/24406" target="_bank">#24406 Removed unused provider specific code in gce provider</a> by <a href="https://github.com/davidopp" target="_bank">davidopp</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461017509000229" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 05:11</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/kubernetes] Issue closed: <a href="https://github.com/kubernetes/kubernetes/issues/23726" target="_bank">#23726 Running Kubernetes Locally via Docker - <code>kubectl get nodes</code> returns <code>The connection to the server localhost:8080 was refused - did you specify the right host or port?</code></a> by <a href="https://github.com/bgrant0607" target="_bank">bgrant0607</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461017610000230" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 05:13</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">Today, rkt's pod is immutable, which means once started, all the changes made to the pod or the containers within the pod will require the pod to be restarted. As we are moving towards mutable pods in the future, rkt should support container level interfaces, which can also benefit us from making the container runtime interface more generic and runtime agnostic <a href="https://github.com/kubernetes/kubernetes/issues/22964" target="_bank">https://github.com/kubernetes/kubernetes/issues/22964</a> , as well as implement something like <a href="https://github.com/kubernetes/kubernetes/pull/23567" target="_bank">https://github.com/kubernetes/kubernetes/pull/23567</a> Ref <a href="https://github.com/coreos/rkt/issues/2375" target="_bank">https://github.com/coreos/rkt/issues/2375</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461017878000231" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 05:17</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #F29513">I have poked around looking for where this happens but haven't found it yet. Seems like metrics with type node don't have the custom labels on a node object don't get set. For pods/containers the labels get shown. This may be a duplicate, but couldn't find one.</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461018064000232" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 05:21</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">@gmarek I'm sorry. It turns out that I forgot to update the health check endpoint in the pod.yaml.</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461018515000233" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 05:28</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/contrib] Pull request closed: <a href="https://github.com/kubernetes/contrib/pull/798" target="_bank">#798 Fix the perfdash</a> by <a href="https://github.com/gmarek" target="_bank">gmarek</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461018516000234" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 05:28</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #4183C4"><code><a href="https://github.com/kubernetes/contrib/commit/5f586063ce52e9d0fc6b62d9354e05ec81443a0e" target="_bank">5f58606</a></code> Fix the perfdash. - Lantao Liu
+                                    <code><a href="https://github.com/kubernetes/contrib/commit/5d3821c115abe68749dc5134916c2c24c11a545a" target="_bank">5d3821c</a></code> Merge pull request #798 from Random-Liu/fix-perfdash - Marek Grabowski</div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461018717000235" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 05:31</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #6CC644">Proposed template: *ATTENTION - Release Note ack required!* Use the below <code>release-note</code> block to explain your change. Valid inputs include: *"title"* - the release note is the title of the PR *"none"* - No release note needed for this PR _freeform text_ - Describe your change as a summarized release note
+
+                                    <pre>...release-note block...
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461019260000236" class="msg-type-bot_message msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">bot</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 05:41</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">
+                                <div class="msg-attachment" style="border-left-color: #E3E4E6">[kubernetes/contrib] Issue closed: <a href="https://github.com/kubernetes/contrib/issues/564" target="_bank">#564 Perfdash should support more e2e performance test.</a> by <a href="https://github.com/Random-Liu" target="_bank">Random-Liu</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461019613000238" class="msg-type-bot_disable">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar"><span><img src="https://secure.gravatar.com/avatar/964e1800562665be759658d222d462f9.jpg?s=48&amp;d=https%3A%2F%2Fa.slack-edge.com%2F66f9%2Fimg%2Favatars%2Fava_0000-48.png" class="msg-thumb"></span></div>
+                        <div class="msg-container">
+                            <div class="msg-header"><span class="msg-user">goltermann</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 05:46</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">disabled an integration in this channel: <a href="https://kubernetes.slack.com/services/B09R0TACB" target="_bank">k8s-github</a></div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1461019644000239" class="msg-type-bot_disable msg-same-user">
+                        <div class="msg-date-separator" style="display: none;"><span></span></div>
+                        <div class="msg-avatar">
+                            <!---->
+                        </div>
+                        <div class="msg-container">
+                            <div class="msg-header" style="display: none;"><span class="msg-user">goltermann</span> <span class="msg-time"><a href="" rel="nofollow">Apr 19, 2016 05:47</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">disabled an integration in this channel: <a href="https://kubernetes.slack.com/services/B09NXSW1H" target="_bank">github</a></div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1464026911000270" class="msg-type-">
+                        <div class="msg-date-separator"><span>May 24, 2016</span></div>
+                        <div class="msg-avatar"><span><img src="https://secure.gravatar.com/avatar/00b03a536e83d88d2d179fb1c1494c32.jpg?s=48&amp;d=https%3A%2F%2Fa.slack-edge.com%2F0180%2Fimg%2Favatars%2Fava_0001-48.png" class="msg-thumb"></span></div>
+                        <div class="msg-container">
+                            <div class="msg-header"><span class="msg-user">kira</span> <span class="msg-time"><a href="" rel="nofollow">May 24, 2016 01:08</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">hi</div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1478041941000040" class="msg-type-">
+                        <div class="msg-date-separator"><span>November 2, 2016</span></div>
+                        <div class="msg-avatar"><span><img src="https://avatars.slack-edge.com/2017-01-03/123620996502_ecffb27e79d9d1de6066_48.jpg" class="msg-thumb"></span></div>
+                        <div class="msg-container">
+                            <div class="msg-header"><span class="msg-user">elijah.caine</span> <span class="msg-time"><a href="" rel="nofollow">Nov 2, 2016 06:12</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">On the GitHub docs there's a tracing pixel hosted at <a href="http://kubernetes-site.appspot.com" target="_bank">kubernetes-site.appspot.com</a>. Anybody know if the source for that app is available somewhere?</div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1479756954000056" class="msg-type-">
+                        <div class="msg-date-separator"><span>November 22, 2016</span></div>
+                        <div class="msg-avatar"><span><img src="https://secure.gravatar.com/avatar/34a55d46969d372f9023424522c99aee.jpg?s=48&amp;d=https%3A%2F%2Fa.slack-edge.com%2F66f9%2Fimg%2Favatars%2Fava_0007-48.png" class="msg-thumb"></span></div>
+                        <div class="msg-container">
+                            <div class="msg-header"><span class="msg-user">rivimont</span> <span class="msg-time"><a href="" rel="nofollow">Nov 22, 2016 02:35</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">Hi! I recently tried making my first update to the k8s docs here: <a href="https://github.com/kubernetes/kubernetes.github.io/pull/1752" target="_bank">https://github.com/kubernetes/kubernetes.github.io/pull/1752</a> I'm just trying to find out if there is anything else I need to do.</div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1480647905000069" class="msg-type-">
+                        <div class="msg-date-separator"><span>December 2, 2016</span></div>
+                        <div class="msg-avatar"><span><img src="https://secure.gravatar.com/avatar/eb1ddc896951ee6d7474814d6b59b9f8.jpg?s=48&amp;d=https%3A%2F%2Fa.slack-edge.com%2F272a%2Fimg%2Favatars%2Fava_0026-48.png" class="msg-thumb"></span></div>
+                        <div class="msg-container">
+                            <div class="msg-header"><span class="msg-user">tonglil</span> <span class="msg-time"><a href="" rel="nofollow">Dec 2, 2016 10:05</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">Might be the more relevant channel?
+                                <div class="msg-attachment" style="border-left-color: #D0D0D0">I'm wondering if any github admins can tell me what they are using to apply this file to configure repo labels? <a href="https://github.com/kubernetes/kubernetes/blob/master/labels.yaml" target="_bank">https://github.com/kubernetes/kubernetes/blob/master/labels.yaml</a></div>
+                            </div>
+                        </div>
+                        <!---->
+                    </li>
+                    <li id="1481132246000003" class="msg-type-">
+                        <div class="msg-date-separator"><span>December 8, 2016</span></div>
+                        <div class="msg-avatar"><span><img src="https://secure.gravatar.com/avatar/eb1ddc896951ee6d7474814d6b59b9f8.jpg?s=48&amp;d=https%3A%2F%2Fa.slack-edge.com%2F272a%2Fimg%2Favatars%2Fava_0026-48.png" class="msg-thumb"></span></div>
+                        <div class="msg-container">
+                            <div class="msg-header"><span class="msg-user">tonglil</span> <span class="msg-time"><a href="" rel="nofollow">Dec 8, 2016 00:37</a> <!----> <!----> <br></span></div>
+                            <div class="msg-body">I see that the repo for ingress was extracted from "kubernetes/contrib". If an existing issue in contrib is related to ingress, should it be cross posted to "kubernetes/ingress"?</div>
+                        </div>
+                        <div class="msg-date-separator msg-end-separator"><span>༄ No more new messages &nbsp;<em dir="rtl" class="end-mark">༄</em></span></div>
+                    </li>
+                    <!---->
+                </ul>
+                <div class="loader messages-loader-center loader-sm" style="display: none;">sm</div>
+                <div class="messages-loader-bottom">
+                    <div class="loader loader-xs" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+        <div id="pagination" class="pagination-container">
+            <ul class="pagination pagination-vertical">
+                <li class="page-item"><a href="" class="page-link">▲</a></li>
+                <li class="page-item"><a href="" class="page-link">1</a></li>
+                <li class="page-item disabled"><span class="page-link">...</span></li>
+                <li class="page-item"><a href="" class="page-link">95</a></li>
+                <li class="page-item"><a href="" class="page-link">96</a></li>
+                <li class="page-item"><a href="" class="page-link">97</a></li>
+                <li class="page-item"><a href="" class="page-link">98</a></li>
+                <li class="page-item"><a href="" class="page-link">99</a></li>
+                <!---->
+                <li class="page-item active"><span class="page-link">100</span></li>
+                <li class="page-item disabled"><span class="page-link">▼</span></li>
+            </ul>
+        </div>
+    </div>
+    <!--[if lt IE 10]>
+<p class="browse-happy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+    <script type="text/javascript">
+	    function togglenavbar(){
+		    if (document.getElementById("app").className == 'ready') { // Check the current class name
+			        document.getElementById("app").className = "with-menu";   // Set other class name
+			} else {
+			        document.getElementById("app").className = "ready";  // Otherwise, use `second_name`
+		    }
+		    return false;
+		}   
+    </script>
+
+</body>
+
+</html>
