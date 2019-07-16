@@ -474,7 +474,12 @@ if (!function_exists('slack_format_message')) {
         foreach ($arr_matched_tag[0] as $matched_tag) {
             $tag = substr(substr($matched_tag,2),0,-1);
             $user = User::getUserById($tag);
-            $message = str_replace('<@'.$tag.'>','<span class="mentiontag">@'.$user->name."</span>",$message);
+            if(!$user){
+              $username = 'Anonymous';
+            }else{
+              $username = $user->name;
+            }
+            $message = str_replace('<@'.$tag.'>','<span class="mentiontag">@'.$username."</span>",$message);
         }
 
         //Fix URL bug
